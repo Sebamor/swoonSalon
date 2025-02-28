@@ -43,7 +43,21 @@ header h1 {
 #nav-links a:hover {
     opacity: 0.5;
 }
-
+#nav-booking {
+    border: none;
+    background: var(--tertiary-bg-color);
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#nav-booking:hover {
+    opacity: 0.5;
+    background: none;
+}
 #hamburger {
     display: none;
     cursor: pointer;
@@ -215,6 +229,7 @@ ul a {
 #cta2-text {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 #cta2-text h2 {
     width: 50vw;
@@ -229,6 +244,10 @@ ul a {
     transition-property: all;
     transition-duration: 0.5s;
     padding: 10px;
+}
+#cta2-text button:hover {
+    opacity: 0.5;
+    background: none;
 }
 #cta2-book-animation {
     position: absolute;
@@ -269,8 +288,41 @@ ul a {
 }
 
 /* Contact Styling */
+#contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+@media screen and (max-width: 900px) {
+    #contact {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        gap: 50px;
+    }
+}
 
 /* Footer Styling */
+footer {
+    background: #272626;
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    text-align: center;
+}
+#footer-socials {
+    color: white;
+    border-radius: 30px;
+    background: var(--main-bg-color);
+    width: 80px;
+}
 #footer-socials img{
     width: 50px;
+    color: #fff;
 }
