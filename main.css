@@ -104,7 +104,6 @@ ul a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
 #cta1-text button {
     border: none;
@@ -134,6 +133,7 @@ ul a {
     #cta1-text {
         width: 100vw;
         order: 2;
+        min-height: 300px;
     }
     #cta1-image img {
         width: 100vw;
@@ -205,6 +205,42 @@ ul a {
 /* CTA2 Styling */
 #cta2 {
     background: var(--tertiary-bg-color);
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#cta2-text {
+    display: flex;
+    justify-content: center;
+}
+#cta2-text h2 {
+    width: 50vw;
+    font-size: 45px;
+}
+#cta2-text button {
+    border: none;
+    background: var(--secondary-bg-color);
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+    padding: 10px;
+}
+#cta2-book-animation {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
 }
 
 /* Scrolling Text Animation */
@@ -213,15 +249,15 @@ ul a {
     white-space: nowrap;
     overflow: hidden;
     width: 100vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: 700;
 }
 .scrolling-text span {
-    animation: scroll 30s linear infinite;
+    animation: scroll 60s linear infinite;
     display: inline-block;
 }
 .scroll2 span{
-    animation-delay: 15s;
+    animation-delay: 30s;
 }
 @keyframes scroll {
     0% {
