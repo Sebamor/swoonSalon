@@ -9,6 +9,7 @@
     --main-font-color: #000;
     --main-bg-color: #fff;
     --secondary-bg-color: #c9e9e4;
+    --tertiary-bg-color: #fcc2c0;
 }
 
 body {
@@ -47,6 +48,7 @@ header h1 {
     display: none;
     cursor: pointer;
 }
+/* Mobile Nav */
 @media screen and (max-width:900px) {
     header {
         display: flex;
@@ -91,19 +93,40 @@ ul a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 #cta1-text {
+    font-size: 45px;
     width: 50vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    
+}
+#cta1-text button {
+    border: none;
+    background: var(--tertiary-bg-color);
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+    padding: 10px;
+}
+#cta1-text button:hover {
+    opacity: 0.5;
+    background: var(--secondary-bg-color);
 }
 #cta1-image img {
     width: 50vw;
     height: 100%;
+    display: block;
+    object-fit: cover;
 }
+/* Mobile CTA1 */
 @media screen and (max-width: 900px) {
     #cta1 {
         flex-direction: column;
@@ -117,8 +140,72 @@ ul a {
     }
 }
 
-/* CTA2 Styling */
+/* Price Styling */
+#price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#price-text {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#price-image {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#price-image img {
+    width: max(30vw, 500px);
+}
+#price-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    gap: 20px;
+}
+.price-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#price-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+#price-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+@media screen and (max-width: 900px) {
+    #price {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
 
+/* CTA2 Styling */
+#cta2 {
+    background: var(--tertiary-bg-color);
+}
 
 /* Scrolling Text Animation */
 .scrolling-text {
