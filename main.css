@@ -1,0 +1,25 @@
+* {
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* Scrolling Text Animation */
+.scrolling-text {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.scrolling-text span {
+    animation: scroll 16s linear infinite;
+    display: inline-block;
+}
+.scroll2 span{
+    animation-delay: 8s;
+}
+@keyframes scroll {
+    0% {
+    transform: translateX(100%);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+}
