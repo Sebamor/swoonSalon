@@ -92,6 +92,9 @@ header h1 {
         flex-direction: column;
         gap: 10px;
     }
+    #nav-links.active {
+        display: flex;
+    }
 }
 ul a {
     text-decoration: none;

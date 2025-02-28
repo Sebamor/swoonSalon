@@ -1,12 +1,7 @@
 // Burger menu collapse
 function burgerMenu() {
-    let burger = document.getElementById('nav-links');
-    if (burger.style.display === 'none') {
-        burger.style.display = 'flex';
-    }
-    else {
-        burger.style.display = 'none';
-    }
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
 }
 
 // Get the modal
